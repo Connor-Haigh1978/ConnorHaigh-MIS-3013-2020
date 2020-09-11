@@ -12,6 +12,7 @@ namespace CoinToss
         {
             Random rnd = new Random();
             int number = rnd.Next(0, 2);
+            Console.WriteLine("Devloper " + DEVELOPER + " Would like to flip a coin");
             Console.WriteLine("Heads or Tails?:");
             string answer = Console.ReadLine();
 
