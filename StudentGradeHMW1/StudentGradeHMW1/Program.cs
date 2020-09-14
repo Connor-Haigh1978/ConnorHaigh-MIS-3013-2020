@@ -4,6 +4,7 @@ namespace StudentGradeHMW1
 {
     class Program
     {
+        //Connor Haigh 113408657
         static void Main(string[] args)
         {
             string FirstName;
