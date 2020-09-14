@@ -26,11 +26,11 @@ namespace SaleTotalHMW1
             Console.WriteLine(ItemQuestion);
             item = Console.ReadLine();
 
-            Console.WriteLine("How many " + item + " are you purchasing today?");
+            Console.WriteLine("How many " + item + "'s are you purchasing today?");
             QuantityInput = Console.ReadLine();
             quantity = Convert.ToDouble(QuantityInput);
 
-            Console.WriteLine("What is the price of the " + item + "'s");
+            Console.WriteLine("What is the price for each " + item + "?");
             PriceInput = Console.ReadLine();
             price = Convert.ToDouble(PriceInput);
 
@@ -41,9 +41,9 @@ namespace SaleTotalHMW1
             Console.WriteLine("         Your sales tax for your bill is " + SalesTax.ToString("C2"));
 
             total = (SubTotal + SalesTax);
-            Console.WriteLine("         Your total bill is ");
-            Console.ForegroundColor = ConsoleColor.Green; 
-            Console.WriteLine("                      " + total.ToString("C2"));
+            
+            Console.WriteLine("         Your total for your bill is " + total.ToString("C2"));
+
 
         }
     }
