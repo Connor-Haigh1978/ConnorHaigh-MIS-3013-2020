@@ -5,6 +5,7 @@ namespace SaleTotalHMW1
 {
     class Program
     {
+        // Connor Haigh 113408657
         const double TaxRate = .085;
         static void Main(string[] args)
         {
