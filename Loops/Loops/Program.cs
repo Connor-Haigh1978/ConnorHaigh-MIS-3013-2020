@@ -14,10 +14,7 @@ namespace Loops
             
             for (int i = 1; i < 101; i++)
             {
-
-
-                sum = sum + i;
-                            
+                sum = sum + i;               
             }
 
             Console.WriteLine($" The sum of values from 1 - 100 is {sum}");
