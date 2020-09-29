@@ -35,11 +35,10 @@ namespace ConditionalStringParticipation
                 Console.WriteLine("Sorry, I could not find your word " + answer1);
 
                 string InstanceOfString = answer1; 
-                for (int i = InstanceOfString.Length - 1; i > -1; i--)
-                    {
+                for (int i = InstanceOfString.Length -1; i >=0; i--)
+                {
                     char letter = InstanceOfString[i];
                     Console.Write(letter);
-
                 }
 
             }
