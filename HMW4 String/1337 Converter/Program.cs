@@ -7,6 +7,11 @@ namespace _1337_Converter
         static void Main(string[] args)
         {
 
+            /*string sentence = "pppooo";
+            Console.WriteLine(sentence);
+            Console.WriteLine(sentence.Replace('p','u'));
+            
+
             Console.WriteLine("Please write me a sentence");
             string sentence = Console.ReadLine().ToUpper();
             string h = "H";
@@ -16,12 +21,16 @@ namespace _1337_Converter
             string p = "P";
             string pC = "[]D";
 
-            for (int i = 0; i < sentence.Length; i++)
-            {
-                if (sentence.Contains('A'))
-                {
-                    sentence.Replace('A', '4');
-                }
+            //for (int i = 0; i < sentence.Length; i++)
+            //{
+                //if (sentence.Contains("A"))
+                //{
+                    sentence.Replace("A", "4");
+                    Console.WriteLine(sentence);
+                //}
+            //}
+            //Console.WriteLine(sentence);
+            Console.ReadKey();
                 if (sentence.Contains('E'))
                 {
                     sentence.Replace('E', '3');
@@ -51,6 +60,20 @@ namespace _1337_Converter
             }
             
             
+            Console.WriteLine(sentence);
+            Console.ReadKey();
+        */
+            Console.WriteLine("Write me a sentence");
+            string sentence = Console.ReadLine().ToUpper();
+
+            if (sentence.Contains('E'))
+            {
+                Console.WriteLine(sentence.Replace('E', '3'));
+            }
+            if (sentence.Contains('S'))
+            {
+                Console.WriteLine(sentence.Replace('S', '$'));
+            }
             Console.WriteLine(sentence);
             Console.ReadKey();
         }
