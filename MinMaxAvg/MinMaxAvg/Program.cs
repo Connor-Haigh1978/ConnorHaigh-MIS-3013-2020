@@ -8,7 +8,7 @@ using System.Transactions;
 namespace MinMaxAvg
 {
     class Program
-    {
+    { //ConnorHaigh 113408657
         static void Main(string[] args)
         {
             double iterations = 1;
