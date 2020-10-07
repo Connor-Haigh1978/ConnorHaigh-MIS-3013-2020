@@ -1,81 +1,72 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading;
 
 namespace _1337_Converter
 {
     class Program
-    {
+    {       //ConnorHaigh 113408657
         static void Main(string[] args)
         {
-
-            /*string sentence = "pppooo";
-            Console.WriteLine(sentence);
-            Console.WriteLine(sentence.Replace('p','u'));
-            
-
-            Console.WriteLine("Please write me a sentence");
-            string sentence = Console.ReadLine().ToUpper();
-            string h = "H";
-            string hC = "|-|";
-            string u = "U";
-            string uC = "|_|";
-            string p = "P";
-            string pC = "[]D";
-
-            //for (int i = 0; i < sentence.Length; i++)
-            //{
-                //if (sentence.Contains("A"))
-                //{
-                    sentence.Replace("A", "4");
-                    Console.WriteLine(sentence);
-                //}
-            //}
-            //Console.WriteLine(sentence);
-            Console.ReadKey();
-                if (sentence.Contains('E'))
-                {
-                    sentence.Replace('E', '3');
-                }
-                if (sentence.Contains(h))
-                {
-                    sentence.Replace(h, hC);
-                }
-                if (sentence.Contains('S'))
-                {
-                    sentence.Replace('S', '$');
-                }
-                if (sentence.Contains('T'))
-                {
-                    sentence.Replace('T', '7');
-                }
-                if (sentence.Contains(u))
-                {
-                    sentence.Replace(u, uC);
-                }
-                if (sentence.Contains("O"))
-                {
-                    sentence.Replace("O", "0");
-                }
-                if (sentence.Contains(p))
-                    sentence.Replace(p, pC);
-            }
-            
-            
-            Console.WriteLine(sentence);
-            Console.ReadKey();
-        */
+ 
             Console.WriteLine("Write me a sentence");
-            string sentence = Console.ReadLine().ToUpper();
-
+            string sentence = Console.ReadLine();
+            //bool exc = sentence.Contains('!');
+            if (sentence.Contains('A'))
+            {
+               sentence = sentence.Replace('A', '4');
+                //Console.WriteLine(sentence);
+            }
             if (sentence.Contains('E'))
             {
-                Console.WriteLine(sentence.Replace('E', '3'));
+                sentence = sentence.Replace('E', '3');
+                //Console.WriteLine(sentence);
+            }
+            if (sentence.Contains("H"))
+            {
+                sentence = sentence.Replace("H", "|-|");
+                //Console.WriteLine(sentence);
             }
             if (sentence.Contains('S'))
             {
-                Console.WriteLine(sentence.Replace('S', '$'));
+                sentence = sentence.Replace('S', '$');
+                //Console.WriteLine(sentence);
             }
-            Console.WriteLine(sentence);
+            if (sentence.Contains('T'))
+            {
+                sentence = sentence.Replace('T', '7');
+                //Console.WriteLine(sentence);
+            }
+            if (sentence.Contains("U"))
+            {
+                sentence = sentence.Replace("U", "|_|");
+                //Console.WriteLine(sentence);
+            }
+            if (sentence.Contains('O'))
+            {
+                sentence = sentence.Replace('O', '0');
+                //Console.WriteLine(sentence);
+            }
+            if (sentence.Contains("P"))
+            {
+                sentence = sentence.Replace("P", "[]D");
+                //Console.WriteLine(sentence);
+            }
+            if (sentence.Contains("!"))
+            {
+                Console.WriteLine(sentence);
+
+            }
+            else if (sentence.Contains("!") == false)
+            {
+                Console.WriteLine($"{sentence}!");
+            }
+
+            
             Console.ReadKey();
+           
         }
     }
 }
+
