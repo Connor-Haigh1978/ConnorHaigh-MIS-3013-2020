@@ -6,32 +6,18 @@ namespace P_CircleRect
     {
         static void Main(string[] args)
         {
-            List<string> FirstNames = new List<string>();
-            List<string> LastNames = new List<string>();
-            List<string> dobs = new List<string>();
-            List<string> FavoriteFood = new List<string>();
-            List<double> AccountBalance = new List<double>();
 
-            FirstNames.Add("Connor");
-            LastNames.Add("Haigh");
-            dobs.Add("04/19/2000");
-            FavoriteFood.Add("Steak");
-            AccountBalance.Add(420690);
+            Rectangle myRectangle = new Rectangle();
+            myRectangle.Length = 10;
+            myRectangle.Width = 9;
+            Console.WriteLine($"The length of the rectangle is {myRectangle.Length} The width of the rectangle is {myRectangle.Width}\nThe area of the rectangle is {myRectangle.CalculateArea()} \nThe perimeter of the rectangle is {myRectangle.CalculatePerimeter()} ");
 
-            FirstNames.Add("Lil");
-            LastNames.Add("Gooch");
-            dobs.Add("04/19/1969");
-            FavoriteFood.Add("Ass");
-            AccountBalance.Add(696969);
+            Circle myCircle = new Circle();
+            myCircle.Radius = 10;
+            Console.WriteLine($"\nThe area of a circle with a radius of {myCircle.Radius} is {myCircle.CalculateArea()}");
+            Console.WriteLine($"The area of a circle with a radius of {myCircle.Radius} is {myCircle.CalculatePerimeter()}");
 
-            for (int i = 0; i < FirstNames.Count; i++)
-            {
-                Console.WriteLine($"First Name: {FirstNames[i]}, Last Name: {LastNames[i]}, DOB: {dobs[i]}, Favorite Food:{FavoriteFood[i]}, Account Balance: {AccountBalance[i]} ");
-            }
-
-
-            Console.WriteLine("Hello World!");
-            Console.ReadLine();
+            Console.ReadKey();
         }
     }
 }
