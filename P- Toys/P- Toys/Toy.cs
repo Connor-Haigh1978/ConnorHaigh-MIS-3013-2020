@@ -26,19 +26,17 @@ namespace P__Toys
             Price = price;
             Notes = notes;
         }
+
         public string GetAisle()
         {
             char FirstLetter;
             FirstLetter = Manufacturer[0];
+            string CapitalizedFirstLetter = FirstLetter.ToString().ToUpper();
             Random rnd = new Random();
             int number = rnd.Next(0, 24);
-            string result = FirstLetter + "-" + number;
+            string result = CapitalizedFirstLetter + "-" + number;
             return result;
 
-            //for (int i = 0; i < Manufacturer.Length; i++)
-            //{
-            //    FirstLetter = Manufacturer[i];
-            //}
         }
     }
 }
